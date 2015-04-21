@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8121B0031AE62519003E6B01 /* HttpHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFFD1AE62519003E6B01 /* HttpHandlers.swift */; };
+		8121B0041AE62519003E6B01 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFFE1AE62519003E6B01 /* HttpParser.swift */; };
+		8121B0051AE62519003E6B01 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121AFFF1AE62519003E6B01 /* HttpRequest.swift */; };
+		8121B0061AE62519003E6B01 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121B0001AE62519003E6B01 /* HttpResponse.swift */; };
+		8121B0071AE62519003E6B01 /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121B0011AE62519003E6B01 /* HttpServer.swift */; };
+		8121B0081AE62519003E6B01 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121B0021AE62519003E6B01 /* Socket.swift */; };
+		8121B00D1AE6252D003E6B01 /* SwifterActiveRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121B00A1AE6252D003E6B01 /* SwifterActiveRecord.swift */; };
+		8121B00E1AE6252D003E6B01 /* SwifterDatabaseProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121B00B1AE6252D003E6B01 /* SwifterDatabaseProxy.swift */; };
+		8121B00F1AE6252D003E6B01 /* SwifterSQLiteDatabaseProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121B00C1AE6252D003E6B01 /* SwifterSQLiteDatabaseProxy.swift */; };
+		8121B0111AE62541003E6B01 /* PacServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121B0101AE62541003E6B01 /* PacServer.swift */; };
+		8121B0131AE62553003E6B01 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8121B0121AE62553003E6B01 /* libsqlite3.dylib */; };
+		8121B0151AE62D9D003E6B01 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121B0141AE62D9D003E6B01 /* SettingTableViewController.swift */; };
+		8121B0191AE640E8003E6B01 /* proxy.pac in Resources */ = {isa = PBXBuildFile; fileRef = 8121B0181AE640E8003E6B01 /* proxy.pac */; };
+		8126513B1AE50144001A87BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126513A1AE50144001A87BB /* AppDelegate.swift */; };
+		8126513D1AE50144001A87BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126513C1AE50144001A87BB /* ViewController.swift */; };
+		812651401AE50144001A87BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8126513E1AE50144001A87BB /* Main.storyboard */; };
+		812651421AE50144001A87BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 812651411AE50144001A87BB /* Images.xcassets */; };
+		812651451AE50144001A87BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812651431AE50144001A87BB /* LaunchScreen.xib */; };
+		812651511AE50144001A87BB /* taichi_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812651501AE50144001A87BB /* taichi_iOSTests.swift */; };
+		812651631AE501DA001A87BB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 812651611AE501DA001A87BB /* main.c */; };
+		812651661AE50243001A87BB /* libshadowsocks-libev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8126515F1AE501BC001A87BB /* libshadowsocks-libev.a */; };
+		8126516C1AE50314001A87BB /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126516B1AE50314001A87BB /* SettingsModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8126514B1AE50144001A87BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8126512D1AE50143001A87BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 812651341AE50144001A87BB;
+			remoteInfo = "taichi-iOS";
+		};
+		8126515E1AE501BC001A87BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8126515A1AE501BC001A87BB /* shadowsocks-libev.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 812650171AE4E7A7001A87BB;
+			remoteInfo = "shadowsocks-libev";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8121AFFD1AE62519003E6B01 /* HttpHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpHandlers.swift; path = swifter/HttpHandlers.swift; sourceTree = "<group>"; };
+		8121AFFE1AE62519003E6B01 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpParser.swift; path = swifter/HttpParser.swift; sourceTree = "<group>"; };
+		8121AFFF1AE62519003E6B01 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = swifter/HttpRequest.swift; sourceTree = "<group>"; };
+		8121B0001AE62519003E6B01 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = swifter/HttpResponse.swift; sourceTree = "<group>"; };
+		8121B0011AE62519003E6B01 /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpServer.swift; path = swifter/HttpServer.swift; sourceTree = "<group>"; };
+		8121B0021AE62519003E6B01 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = swifter/Socket.swift; sourceTree = "<group>"; };
+		8121B00A1AE6252D003E6B01 /* SwifterActiveRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterActiveRecord.swift; path = swifter/ActiveRecord/SwifterActiveRecord.swift; sourceTree = "<group>"; };
+		8121B00B1AE6252D003E6B01 /* SwifterDatabaseProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterDatabaseProxy.swift; path = swifter/ActiveRecord/SwifterDatabaseProxy.swift; sourceTree = "<group>"; };
+		8121B00C1AE6252D003E6B01 /* SwifterSQLiteDatabaseProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwifterSQLiteDatabaseProxy.swift; path = swifter/ActiveRecord/SwifterSQLiteDatabaseProxy.swift; sourceTree = "<group>"; };
+		8121B0101AE62541003E6B01 /* PacServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacServer.swift; sourceTree = "<group>"; };
+		8121B0121AE62553003E6B01 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8121B0141AE62D9D003E6B01 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		8121B0181AE640E8003E6B01 /* proxy.pac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = proxy.pac; sourceTree = "<group>"; };
+		812651351AE50144001A87BB /* taichi-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "taichi-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		812651391AE50144001A87BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8126513A1AE50144001A87BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8126513C1AE50144001A87BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8126513F1AE50144001A87BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		812651411AE50144001A87BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		812651441AE50144001A87BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8126514A1AE50144001A87BB /* taichi-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "taichi-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8126514F1AE50144001A87BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		812651501AE50144001A87BB /* taichi_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taichi_iOSTests.swift; sourceTree = "<group>"; };
+		8126515A1AE501BC001A87BB /* shadowsocks-libev.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "shadowsocks-libev.xcodeproj"; path = "shadowsocks-libev/shadowsocks-libev.xcodeproj"; sourceTree = "<group>"; };
+		812651601AE501DA001A87BB /* taichi-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "taichi-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		812651611AE501DA001A87BB /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		812651621AE501DA001A87BB /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		8126516B1AE50314001A87BB /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		812651321AE50144001A87BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8121B0131AE62553003E6B01 /* libsqlite3.dylib in Frameworks */,
+				812651661AE50243001A87BB /* libshadowsocks-libev.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812651471AE50144001A87BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8121AFFB1AE62509003E6B01 /* swifter */ = {
+			isa = PBXGroup;
+			children = (
+				8121B0091AE6251C003E6B01 /* ActiveRecord */,
+				8121AFFD1AE62519003E6B01 /* HttpHandlers.swift */,
+				8121AFFE1AE62519003E6B01 /* HttpParser.swift */,
+				8121AFFF1AE62519003E6B01 /* HttpRequest.swift */,
+				8121B0001AE62519003E6B01 /* HttpResponse.swift */,
+				8121B0011AE62519003E6B01 /* HttpServer.swift */,
+				8121B0021AE62519003E6B01 /* Socket.swift */,
+			);
+			name = swifter;
+			sourceTree = "<group>";
+		};
+		8121B0091AE6251C003E6B01 /* ActiveRecord */ = {
+			isa = PBXGroup;
+			children = (
+				8121B00A1AE6252D003E6B01 /* SwifterActiveRecord.swift */,
+				8121B00B1AE6252D003E6B01 /* SwifterDatabaseProxy.swift */,
+				8121B00C1AE6252D003E6B01 /* SwifterSQLiteDatabaseProxy.swift */,
+			);
+			name = ActiveRecord;
+			sourceTree = "<group>";
+		};
+		8126512C1AE50143001A87BB = {
+			isa = PBXGroup;
+			children = (
+				8121B0121AE62553003E6B01 /* libsqlite3.dylib */,
+				8126515A1AE501BC001A87BB /* shadowsocks-libev.xcodeproj */,
+				812651371AE50144001A87BB /* taichi-iOS */,
+				8126514D1AE50144001A87BB /* taichi-iOSTests */,
+				812651361AE50144001A87BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		812651361AE50144001A87BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				812651351AE50144001A87BB /* taichi-iOS.app */,
+				8126514A1AE50144001A87BB /* taichi-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		812651371AE50144001A87BB /* taichi-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8121AFFB1AE62509003E6B01 /* swifter */,
+				8126513A1AE50144001A87BB /* AppDelegate.swift */,
+				8121B0101AE62541003E6B01 /* PacServer.swift */,
+				8126516B1AE50314001A87BB /* SettingsModel.swift */,
+				8121B0141AE62D9D003E6B01 /* SettingTableViewController.swift */,
+				8126513C1AE50144001A87BB /* ViewController.swift */,
+				8126513E1AE50144001A87BB /* Main.storyboard */,
+				812651381AE50144001A87BB /* Supporting Files */,
+				812651611AE501DA001A87BB /* main.c */,
+				812651621AE501DA001A87BB /* main.h */,
+				812651601AE501DA001A87BB /* taichi-iOS-Bridging-Header.h */,
+			);
+			path = "taichi-iOS";
+			sourceTree = "<group>";
+		};
+		812651381AE50144001A87BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8121B0181AE640E8003E6B01 /* proxy.pac */,
+				812651411AE50144001A87BB /* Images.xcassets */,
+				812651431AE50144001A87BB /* LaunchScreen.xib */,
+				812651391AE50144001A87BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8126514D1AE50144001A87BB /* taichi-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				812651501AE50144001A87BB /* taichi_iOSTests.swift */,
+				8126514E1AE50144001A87BB /* Supporting Files */,
+			);
+			path = "taichi-iOSTests";
+			sourceTree = "<group>";
+		};
+		8126514E1AE50144001A87BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8126514F1AE50144001A87BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8126515B1AE501BC001A87BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8126515F1AE501BC001A87BB /* libshadowsocks-libev.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		812651341AE50144001A87BB /* taichi-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 812651541AE50144001A87BB /* Build configuration list for PBXNativeTarget "taichi-iOS" */;
+			buildPhases = (
+				812651311AE50144001A87BB /* Sources */,
+				812651321AE50144001A87BB /* Frameworks */,
+				812651331AE50144001A87BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "taichi-iOS";
+			productName = "taichi-iOS";
+			productReference = 812651351AE50144001A87BB /* taichi-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		812651491AE50144001A87BB /* taichi-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 812651571AE50144001A87BB /* Build configuration list for PBXNativeTarget "taichi-iOSTests" */;
+			buildPhases = (
+				812651461AE50144001A87BB /* Sources */,
+				812651471AE50144001A87BB /* Frameworks */,
+				812651481AE50144001A87BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8126514C1AE50144001A87BB /* PBXTargetDependency */,
+			);
+			name = "taichi-iOSTests";
+			productName = "taichi-iOSTests";
+			productReference = 8126514A1AE50144001A87BB /* taichi-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8126512D1AE50143001A87BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = taichi;
+				TargetAttributes = {
+					812651341AE50144001A87BB = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					812651491AE50144001A87BB = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 812651341AE50144001A87BB;
+					};
+				};
+			};
+			buildConfigurationList = 812651301AE50143001A87BB /* Build configuration list for PBXProject "taichi-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8126512C1AE50143001A87BB;
+			productRefGroup = 812651361AE50144001A87BB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8126515B1AE501BC001A87BB /* Products */;
+					ProjectRef = 8126515A1AE501BC001A87BB /* shadowsocks-libev.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				812651341AE50144001A87BB /* taichi-iOS */,
+				812651491AE50144001A87BB /* taichi-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8126515F1AE501BC001A87BB /* libshadowsocks-libev.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libshadowsocks-libev.a";
+			remoteRef = 8126515E1AE501BC001A87BB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		812651331AE50144001A87BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812651401AE50144001A87BB /* Main.storyboard in Resources */,
+				8121B0191AE640E8003E6B01 /* proxy.pac in Resources */,
+				812651451AE50144001A87BB /* LaunchScreen.xib in Resources */,
+				812651421AE50144001A87BB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812651481AE50144001A87BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		812651311AE50144001A87BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8121B00E1AE6252D003E6B01 /* SwifterDatabaseProxy.swift in Sources */,
+				8121B0111AE62541003E6B01 /* PacServer.swift in Sources */,
+				8126516C1AE50314001A87BB /* SettingsModel.swift in Sources */,
+				8121B00F1AE6252D003E6B01 /* SwifterSQLiteDatabaseProxy.swift in Sources */,
+				8121B0031AE62519003E6B01 /* HttpHandlers.swift in Sources */,
+				8121B0081AE62519003E6B01 /* Socket.swift in Sources */,
+				8126513D1AE50144001A87BB /* ViewController.swift in Sources */,
+				8121B00D1AE6252D003E6B01 /* SwifterActiveRecord.swift in Sources */,
+				8126513B1AE50144001A87BB /* AppDelegate.swift in Sources */,
+				8121B0151AE62D9D003E6B01 /* SettingTableViewController.swift in Sources */,
+				8121B0061AE62519003E6B01 /* HttpResponse.swift in Sources */,
+				8121B0071AE62519003E6B01 /* HttpServer.swift in Sources */,
+				8121B0041AE62519003E6B01 /* HttpParser.swift in Sources */,
+				8121B0051AE62519003E6B01 /* HttpRequest.swift in Sources */,
+				812651631AE501DA001A87BB /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		812651461AE50144001A87BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812651511AE50144001A87BB /* taichi_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8126514C1AE50144001A87BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 812651341AE50144001A87BB /* taichi-iOS */;
+			targetProxy = 8126514B1AE50144001A87BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8126513E1AE50144001A87BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8126513F1AE50144001A87BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		812651431AE50144001A87BB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				812651441AE50144001A87BB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		812651521AE50144001A87BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		812651531AE50144001A87BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		812651551AE50144001A87BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "taichi-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "taichi-iOS/taichi-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		812651561AE50144001A87BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "taichi-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "taichi-iOS/taichi-iOS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		812651581AE50144001A87BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "taichi-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taichi-iOS.app/taichi-iOS";
+			};
+			name = Debug;
+		};
+		812651591AE50144001A87BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "taichi-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/taichi-iOS.app/taichi-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		812651301AE50143001A87BB /* Build configuration list for PBXProject "taichi-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812651521AE50144001A87BB /* Debug */,
+				812651531AE50144001A87BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		812651541AE50144001A87BB /* Build configuration list for PBXNativeTarget "taichi-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812651551AE50144001A87BB /* Debug */,
+				812651561AE50144001A87BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		812651571AE50144001A87BB /* Build configuration list for PBXNativeTarget "taichi-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				812651581AE50144001A87BB /* Debug */,
+				812651591AE50144001A87BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8126512D1AE50143001A87BB /* Project object */;
+}
